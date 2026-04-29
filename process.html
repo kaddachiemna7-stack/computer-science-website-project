@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return verifprocess()">
+        <fieldset>
+            <legend>
+                <h2>processing a complaint</h2>
+            </legend>
+            <table>
+                
+                <tr>
+                    <td><label for="dtr">Problem start date:</label></td>
+                    <td><input type="text" name="dtr" id="dtr"/></td>
+                </tr>
+                
+                <tr>
+                   <td><label for="freq">Issue Frequency:</label></td>
+                   <td>
+                   <select id="freq">
+                   <option value="">choose frequency</option>
+                   <option>Sometimes</option>
+                   <option>Often</option>
+                   <option>Always</option>
+                   </select>
+                   </td>
+                </tr>
+
+                <tr>
+                   <td><label for="worse">Problem Getting Worse:</label></td>
+                   <td>
+                   <select id="worse">
+                   <option value="">choose</option>
+                   <option>Yes</option>
+                   <option>No</option>
+                   </select>
+                   </td>
+                </tr>
+                <tr>
+                   <td><label for="note">Additional Notes:</label></td>
+                   <td>
+                   <textarea id="note" cols="22" rows="5"></textarea>
+                   </td>
+                </tr>
+                    <td>
+                        <input type="submit" value="submit"/>
+                        <input type="reset" value="cancel"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <script src="control.js"></script>
+</body>
+</html>

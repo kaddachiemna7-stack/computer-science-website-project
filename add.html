@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form onsubmit="return verifAdd()">
+        <fieldset>
+            <legend>
+                <h2>Add a complaint</h2>
+            </legend>
+            <table>
+                <tr>
+                   <td><label for="mail">Email:</label></td>
+                   <td><input type="text" id="mail"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="tel">telephone:</label></td>
+                    <td><input type="text" name="tel" id="tel"/></td>
+                </tr>
+                <tr>
+                    <td><label for="cat">category:</label></td>
+                    <td>
+                        <select name="cat" id="cat" id="cat">
+                            <option value="">choose a category</option>
+                            <option value="1">Authentication</option>
+                            <option value="2">Connection</option>
+                            <option value="3">Synchronization</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="desc">description:</label></td>
+                    <td>
+                        <textarea name="desc" id="desc" cols="22" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit"/>
+                        <input type="reset" value="cancel"/>
+                    </td>
+                </tr>
+            </table>    
+        </fieldset>
+    </form>
+    <script src="control.js"></script>
+ </body>
+</html>

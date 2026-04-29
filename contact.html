@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return verifContact()">
+        <fieldset>
+            <legend>
+                <h2>Contact support</h2>
+            </legend>
+
+            <table>
+                <tr>
+                    <td><label for="tel">telephone:</label></td>
+                    <td><input type="text" name="tel" id="tel"/></td>
+                </tr>
+                <tr>
+                    <td><label for="msg">message:</label></td>
+                    <td><textarea id="msg" cols="22" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="send"/>
+                        <input type="reset" value="cancel"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <script src="control.js"></script>
+</body>
+</html>
